@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std ;
+double rate , gro  ;
+int hours;
+double gross_pay(){
+    cout<<"Hi! Enter ur hours : \n";
+    cin>>hours;
+    cout<<"Enter your rate :\n";
+    cin>>rate;
+    if(hours>40) {
+        gro = (40 * rate) + ((hours % 40) * (1.5 * rate));
+        cout << "Gross pay :" << gro<<endl;
+    }else {
+        gro=rate* hours;
+        cout <<"Gross pay :"<<gro<<endl;
+        }
+    return gro;
+}
